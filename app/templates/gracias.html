@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Gracias!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-light text-center py-5">
+
+  <div class="text-center mb-4">
+    <img src="{{ url_for('static', filename='img/logoLME_2.png') }}" alt="Los Mundos Edufis Logo" style="max-width: 150px;">
+  </div>
+
+  <div class="container">
+    <div class="card shadow p-4 mx-auto" style="max-width: 600px; border-radius: 15px;">
+      <h1 class="mb-3">🌟 ¡Gracias por tu apoyo!</h1>
+      <p class="lead">Aquí tienes acceso exclusivo a recursos preparados con mucho mimo:</p>
+
+      <a href="https://nube.losmundosedufis.com/index.php/s/RECURSOEXCLUSIVO" target="_blank" class="btn btn-success btn-lg mb-3">
+        🎁 Acceder a Recursos Exclusivos
+      </a>
+
+      <hr class="my-4">
+
+      <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+        Volver al inicio
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
